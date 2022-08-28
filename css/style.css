@@ -206,46 +206,35 @@ video.fullscreen-bg__video {
   overflow:hidden;
   padding-top:100px;
 }
-.letter-sec::before {
-  background-image: url(../images/backgrounds/rider-bg.jpg);
-  background-repeat: repeat-x;
-  background-position: top center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
-  content: "";
-  width: 3076px;
-  height: 100%;
-  z-index: 0;
-  animation: bgslide 60s linear infinite;
+.image-container{
+  position:absolute;
+  background:#ffffff;
+  clip-path: polygon(0% 10%, 100% 15%, 100% 100%, 0 100%);
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  width:100%;
+  height:100%;
 }
-.letter-sec::after {
+.image-container .moveleft img {
+  width: 4096px;
+  height: 100%;
+}
+.image-container::after {
   background-image: url(../images/backgrounds/rider-bg-after.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: absolute;
   top: 0;
-  left: 0;
+  left: auto;
   right: 0;
   bottom: 0;
-  clip-path:polygon(0 0, 100% 15%, 100% 100%, 0 100%);
   content: "";
-  width: 100%;
+  width: 45%;
   height: 100%;
   z-index: 0;
-}
-@keyframes bgslide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-1692px, 0, 0); /* The image width */
-  }
 }
 .letter-sec .img-box {
   margin-top: -100px;
@@ -645,37 +634,52 @@ footer p {
 /* About Intros */
 .about-intro-sec {
   position: relative;
-  padding: 25rem 0;
+  padding: 20rem 0;
   margin-top: -190px;
+  overflow:hidden;
 }
 .about-intro-top{
-  position: absolute;
-  background-color: #eaebeb;
-  width: 50%;
-  height: 12rem;
-  -webkit-clip-path: polygon(100% 0, 0 43%, 100% 100%);
-  clip-path: polygon(100% 0, 0 43%, 100% 100%);
-  z-index: 2;
-  top: 0px;
-  right: 0;
+  position:absolute;
+  background:#ffffff;
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  width:100%;
+  height:100%;
 }
-.about-intro-sec::before{
-  content: "";
+.about-intro-top .moveleft img {
+  width: 4096px;
+  height: 100%;
+}
+.about-intro-top::after {
+  background-image: url(../images/backgrounds/building-image.png);
+  background-repeat:no-repeat;
+  background-position: bottom right;
+  background-size: contain;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: auto;
+  left: auto;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/backgrounds/about-intro-bg3.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  content: "";
+  width: 700px;
+  height: 898px;
   z-index: 0;
 }
-
+.about-intro-top .shape{
+    position: absolute;
+    background-color: #eaebeb;
+    width: 50%;
+    height: 12rem;
+    -webkit-clip-path: polygon(100% 0, 0 25%, 100% 100%);
+    clip-path: polygon(100% 0, 0 25%, 100% 100%);
+    z-index: 2;
+    top: -68px;
+    right: 0;
+}
 .about-intro-sec .img-box {
   z-index: 1;
   position: relative;
@@ -700,7 +704,7 @@ footer p {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 15%, 100% 8%, 100% 100%, 0% 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -1317,44 +1321,15 @@ footer p {
   padding-top: 8rem;
 }
 .lama-sec {
-  margin-top: -75px;
+  margin-top: -100px;
   position: relative;
   padding-top: 10rem;
   overflow:hidden;
 }
-.lama-sec::before {
-  background-image: url(../images/backgrounds/rider-bg.jpg);
-  background-repeat: repeat-x;
-  background-position: top center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
-  content: "";
-  width: 3076px;
-  height: 100%;
-  z-index: 0;
-  animation: bgslide 60s linear infinite;
+.lama-sec .image-container{
+  clip-path: polygon(0 15%, 100% 10%, 100% 100%, 0% 100%);
 }
-.lama-sec::after {
-  background-image: url(../images/backgrounds/rider-bg-after.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
-  content: "";
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
+
 .lama-sec .img-box {
   margin-top: -100px;
   z-index: 1;
@@ -1508,3 +1483,8 @@ background: #06164b;
   color:#fff;
 }
 
+.solution-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

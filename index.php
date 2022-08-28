@@ -33,6 +33,9 @@
 
   <!-- Letter section Starts -->
   <section class="letter-sec">
+    <div class="image-container">
+      <div class="moveleft"><img src="images/backgrounds/rider-bg.jpg" class="" alt=" Rider Background Image" /></div>
+    </div>
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-4 col-xl-3 order-lg-2 px-xl-0">

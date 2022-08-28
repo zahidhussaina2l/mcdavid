@@ -28,7 +28,10 @@
 
   <!-- Letter section Starts -->
   <section class="about-intro-sec">
-    <!-- <div class="about-intro-top"></div> -->
+    <div class="about-intro-top">
+      <div class="moveleft"><img src="images/backgrounds/about-intro-bg-sm.png" class="" alt=" Rider Background Image" /></div>
+      <div class="shape"></div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-9">
@@ -158,26 +161,26 @@
     <div class="d-none d-sm-block testimonials-alt__images">
       <div class="slider slider-for w-100">
         <div class="testimonials-alt__image-wrapper">
-          <img src="images/slider-img.jpg" alt="Slider Image" class="w-auto mx-auto" />
+          <img src="images/slider-img.jpg" alt="Slider Image" class="testimonials-alt__image"/>
         </div>
         <div class="testimonials-alt__image-wrapper">
-          <img src="images/slider-img.jpg" alt="Slider Image" class="w-auto mx-auto" />
+          <img src="images/backgrounds/about-slider-bg.jpg" alt="Slider Image" class="testimonials-alt__image"/>
         </div>
         <div class="testimonials-alt__image-wrapper">
-          <img src="images/slider-img.jpg" alt="Slider Image" class="w-auto mx-auto" />
+          <img src="images/slider-img.jpg" alt="Slider Image" class="testimonials-alt__image"/>
         </div>
         <div class="testimonials-alt__image-wrapper">
-          <img src="images/slider-img.jpg" alt="Slider Image" class="w-auto mx-auto" />
+          <img src="images/slider-img.jpg" alt="Slider Image" class="testimonials-alt__image"/>
         </div>
         <div class="testimonials-alt__image-wrapper">
-          <img src="images/slider-img.jpg" alt="Slider Image" class="w-auto mx-auto" />
+          <img src="images/slider-img.jpg" alt="Slider Image" class="testimonials-alt__image"/>
         </div>
       </div>
     </div>
 
     <div class="container no-gutters">
       <div class="row justify-content-end">
-        <div class="col-md-9 col-sm-11">
+        <div class="col-sm-28 col-lg-32">
           <div class="testimonials-alt__carousel-wrapper">
             <div class="custom-slick-navigator d-flex align-items-center">
               <button class="custom-slick-arrow custom-slick-arrow-left btn" aria-label="Next" type="button">

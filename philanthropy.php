@@ -52,6 +52,9 @@
     <!-- Blogs Section Ends -->
     <!-- Lama section Starts -->
     <section class="lama-sec">
+        <div class="image-container">
+            <div class="moveleft"><img src="images/backgrounds/rider-bg.jpg" class="" alt=" Rider Background Image" /></div>
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 order-md-2">
