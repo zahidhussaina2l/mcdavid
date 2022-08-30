@@ -1,19 +1,60 @@
 /*====================================
             ScrollTop Position
 ====================================== */
-const navbar = document.getElementById('navbar');
+var didScroll;
+		var lastScrollTop = 0;
+		var delta = 5;
+		var navbarHeight = $('nav').outerHeight();
+
+		$(window).scroll(function(event){
+			didScroll = true;
+		});
+
+		setInterval(function() {
+			if (didScroll) {
+				hasScrolled();
+				didScroll = false;
+			}
+		}, 250);
+
+		function hasScrolled() {
+			var st = $(this).scrollTop();
+			
+			// Make sure they scroll more than delta
+			if(Math.abs(lastScrollTop - st) <= delta)
+				return;
+			
+			// If they scrolled down and are past the navbar, add class .nav-up.
+			// This is necessary so you never see what is "behind" the navbar.
+			if (st > lastScrollTop && st > navbarHeight){
+				// Scroll Down
+				$('nav').removeClass('nav-down').addClass('nav-up');
+			} else {
+				// Scroll Up
+				if(st + $(window).height() < $(document).height()) {
+					$('nav').removeClass('nav-up').addClass('nav-down');
+				}
+			}
+			
+			lastScrollTop = st;
+		}
+
+		//Scroll color background navbar
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop();
+			if(scroll < 100){
+				$('.fixed-top').css('background', 'rgba(0,0,0,0)');
+			} else{
+				$('.fixed-top').css('background', 'rgba(6, 22, 75, 0.9)');
+			}
+		});
+  
     // OnScroll event handler
     const onScroll = () => {
 
       // Get scroll value
       const scroll = document.documentElement.scrollTop
 
-      // If scroll value is more than 0 - add class
-      if (scroll > 0) {
-        navbar.classList.add("scrolled-navbar");
-      } else {
-        navbar.classList.remove("scrolled-navbar");
-      }
     }
 
     // Use the function

@@ -13,7 +13,7 @@
 
   <!-- Header Starts -->
   <header class="home-header">
-      <video loop="" muted="" autoplay="" playsinline="" poster="https://www.milehighgolftrail.com/wp-content/themes/milehigh/assets/images/mountains-homepage.png" class="fullscreen-bg__video">
+      <video loop="" muted="true" autoplay="" playsinline="" poster="https://www.milehighgolftrail.com/wp-content/themes/milehigh/assets/images/mountains-homepage.png" class="fullscreen-bg__video">
 				<source src="https://www.milehighgolftrail.com/wp-content/uploads/2018/05/milehigh_homepage2.mp4" type="video/mp4">
 			</video>
     <div class="container">
@@ -266,13 +266,13 @@
   </section>
   <!-- Video Modal -->
 
-  <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen">
             <div class="modal-content bg-transparent">
                 <div class="modal-body position-relative p-0 border-0">
-                    <button type="button" class="btn-close bg-light position-absolute top-0" data-bs-dismiss="modal" aria-label="Close" style="z-index: 1;"></button>
+                    <button type="button" class="btn-close btn-close-white bg-light position-absolute top-0" data-bs-dismiss="modal" aria-label="Close" style="z-index: 1;"></button>
                     
-                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" width="100%" height="100%" title="YouTube video" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1" id="videoFrame" width="100%" height="100%" title="YouTube video" autoplay="false" allowfullscreen></iframe>
                     
                 </div>
 

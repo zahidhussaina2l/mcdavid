@@ -70,7 +70,9 @@ h6 {
   font-family: "Brandon Grotesque";
   font-weight: bold;
 }
-
+.bg-theme-blue{
+  background-color:#0a2069;
+}
 .font-brandon {
   font-family: "Brandon Grotesque";
 }
@@ -118,6 +120,17 @@ h6 {
 /* Homepage */
 
 /* Navbar */
+nav {
+	transition: top 0.3s;
+	z-index: 9;
+}
+.nav-up {
+  top: -120px;
+  transition: all .3s linear !important;
+  -webkit-transition: all .3s linear !important;
+  -moz-transition: all .3s linear !important;
+  -o-transition: all .3s linear !important;
+}
 .mc-navbar .nav-link {
   color: #ffffff;
   text-transform: uppercase;
@@ -133,9 +146,7 @@ h6 {
   border-radius: 5px;
   font-weight: bold !important;
 }
-.scrolled-navbar {
-  background-color: rgba(6, 22, 75, 0.9);
-}
+
 .navbar-collapse.show {
   background-color: rgba(6, 22, 75, 0.9);
   padding: 10px;
@@ -1479,8 +1490,19 @@ margin-top: 1rem;
 background: #06164b;
 }
 
+
+
 .solutions-btn:hover{
   color:#fff;
+}
+
+@media screen and (min-width: 1900px) {
+  .home-header{
+    min-height: 65vh;
+  }
+  .image-container::after{
+    width: 85%;
+  }
 }
 
 .solution-col{
